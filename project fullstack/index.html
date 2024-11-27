@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hospital Management</title>
+    <link rel="stylesheet" href="View/project.css">
+</head>
+<body>
+    <div class="container">
+        <div id="row">
+            <div class="header">
+                <div class="logo">
+                    <a href="#">
+                        <img id="logo_img" src="images/WhatsApp Image 2024-11-27 at 00.31.28_b1634a17.jpg" alt="">
+                    </a>
+                </div>
+                <div class="search">
+                    <input placeholder="TYPE FOR PATIENTS INFO" type="text" name="" id="search_box">
+                </div>
+                <div class="nav">
+                    <div>
+                        <a href="#">
+                            <span class="nav_icon">
+                                Dashboard
+                            </span>
+                        </a>
+                    </div>
+                    <div>
+                        <a href="#">
+                            <span class="nav_icon">
+                                Appointments
+                            </span>
+                        </a>
+                    </div>
+                    <div>
+                        <a href="#">
+                            <span class="nav_icon">
+                                Billing
+                            </span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="body_content">
+                <div class="panel">
+                    <div class="patient_controller">
+                        <button class="btn">Add new Patient</button>
+                        <button class="btn">Delete all Patient</button>
+                        <select name="" id="dropdown">
+                            <option value="">Name</option>
+                            <option value="">Age</option>
+                            <option value="">Date</option>
+                            <option value="">Blood Group</option>
+                        </select>
+                        <button class="btn-s">SORT</button>
+
+                    </div>
+                    <div class="admin_controller">
+                        <button class="btn">Patient Dashboard</button>
+                        <button class="btn">Doctor's Dashboard</button>
+                    </div>
+                </div>
+                <div class="patient_log">
+                    
+                </div>
+            </div>
+            <!-- name age phone number gender blood_group -->
+            <div id="patient_form">
+                <div class="loading"></div>
+                <div class="form_container">
+                    
+
+                <div id="Name" class="form_details">
+                    <label for="Name" class="patient_form-label search_box">Name:</label>
+                    <input type="text" class="patient_form-control" id="Name" placeholder="Name">
+                </div>
+
+                <div id="Age" class="form_details">
+                    <label for="tAfe" class="patient_form-label search_box">Age:</label>
+                    <input type="text" class="patient_form-control" id="Age" placeholder="Age">
+                </div>
+                <div id="Gender" class="form_details">
+                    <label for="Gender" class="patient_form-label search_box">Gender:</label>
+                    <!-- <input type="text" class="patient_form-control" id="Gender" placeholder="Gender"> -->
+                     <select name="" id="Gender">
+                        <option value="">M</option>
+                        <option value="">F</option>
+                     </select>
+                </div>
+                
+                <div id="Phone_Number" class="form_details">
+                    <label for="Phone_Number" class="patient_form-label search_box">Phone_Number:</label>
+                    <input type="number" class="patient_form-control" id="Phone_Number" placeholder="Phone_Number">
+                </div>
+
+                <div id="description" class="form_details">
+                    <label for="description" class="patient_form-label search_box">description:</label>
+                    <input type="number" class="patient_form-control" id="description" placeholder="description">
+                </div>
+
+                <div id="submit_div">
+                    <button id="submit">submit</button>
+
+                </div>
+            </div>
+
+            </div>
+        </div>
+    </div>
+</body>
+</html>
